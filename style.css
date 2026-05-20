@@ -1,3 +1,33 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 p{
     color:blue;
+    font-family:'Courier New', Courier, monospace;
+} 
+
+div {
+    height: 200px;
+    color: black;
 }
+
+a {
+    color: red;
+}
+
+#sobre {
+    font-weight: bold;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+p + a {
+    font-weight: bold;
+    color: red;
+} /* O seletor de adjacência direta (p + a) seleciona o elemento <a> que vem imediatamente após um elemento <p>. Neste caso, ele aplica as regras de estilo apenas ao link "Clique aqui para saber mais!" que está diretamente após o parágrafo "Este é um parágrafo." */
+  /* O seletor de adjacência geral (p ~ a) seleciona todos os elementos <a> que são irmãos de um elemento <p>, ou seja, todos os links que estão no mesmo nível hierárquico do parágrafo, independentemente de estarem imediatamente após ele ou não. Neste caso, ele aplicaria as regras de estilo a ambos os links "Clique aqui para saber mais!" e "Outro link". */
+  /* O seletor de filho direto (p > a) seleciona apenas os elementos <a> que são filhos diretos de um elemento <p>. Neste caso, ele não aplicaria as regras de estilo a nenhum dos links, pois ambos estão fora do parágrafo. */
+  /* O seletor de descendente (p a) seleciona todos os elementos <a> que são descendentes de um elemento <p>, ou seja, todos os links que estão dentro do parágrafo, independentemente de estarem diretamente dentro dele ou em um nível mais profundo. Neste caso, ele não aplicaria as regras de estilo a nenhum dos links, pois ambos estão fora do parágrafo. */
